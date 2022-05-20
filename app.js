@@ -36,7 +36,7 @@ Buon lavoro e buon divertimento!
 
 
 
-
+let resultListHtml = document.querySelector(".resultList");
 
 let text = "";
 
@@ -59,5 +59,9 @@ for (let i = 1; i <= 100; i++) {
         text = i.toString();
     }
     
+
     console.log(text);
+
+    resultListHtml.innerHTML += `<div class="col">${text}</div>`;
+
 }
